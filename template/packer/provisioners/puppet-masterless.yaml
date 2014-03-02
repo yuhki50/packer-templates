@@ -1,0 +1,16 @@
+"type": "shell"
+
+# require
+"manifest_file": ""
+
+# optional
+"execute_command": ""
+"facter": {
+  "key": "value"
+}
+"hiera_config_path": ""
+"manifest_dir": ""
+"module_paths": [""]
+"prevent_sudo": false
+"staging_directory": "/tmp/packer-puppet-masterless"
+

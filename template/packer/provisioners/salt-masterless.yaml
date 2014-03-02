@@ -1,0 +1,10 @@
+"type": "salt-masterless"
+
+# optional
+"local_state_tree": "/srv/salt"
+"local_pillar_roots": "/srv/pillar"
+"skip_bootstrap": false
+"bootstrap_args": ""
+"minion_config": "/etc/salt"
+"temp_config_dir": "/tmp/salt"
+
