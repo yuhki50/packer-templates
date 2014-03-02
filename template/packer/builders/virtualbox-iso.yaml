@@ -1,0 +1,40 @@
+"type": "virtualbox-iso"
+
+# require
+"iso_checksum": ""
+"iso_checksum_type": ""  # md5, sha1, sha256 or sha512
+"iso_url": ""
+"ssh_username": ""
+
+# optional
+"boot_command": [""]
+"boot_wait": "10s"
+"disk_size": 40000  # 40GB
+"floppy_files": [""]
+"format": "ovf"  # ovf or ova
+"guest_additions_mode": "upload"  # upload, attach, disable
+"guest_additions_path": ""
+"guest_additions_sha256": ""
+"guest_additions_url": ""
+"guest_os_type": "other"
+"hard_drive_interface": "ide"  # ide or sata
+"headless": false
+"http_directory": ""
+"http_port_min": 8000
+"http_port_max": 9000
+"iso_urls": [""]
+"output_directory": "output-BUILDNAME"
+"shutdown_command": ""
+"shutdown_timeout": "5m"
+"ssh_host_port_min": 2222
+"ssh_host_port_min": 4444
+"ssh_key_path": ""
+"ssh_password": ""
+"ssh_port": 22
+"ssh_wait_timeout": "20m"
+"vboxmanage": [
+  [""]
+]
+"virtualbox_version_file": ".vbox_version"
+"vm_name": "packer-BUILDNAME"
+

@@ -1,0 +1,18 @@
+"type": "digitalocean"
+
+# require
+"api_key": "DIGITALOCEAN_API_KEY"
+"client_id": "DIGITALOCEAN_CLIENT_ID"
+
+# optional
+"image_id": 1505447  # Ubuntu 12.04.3 x64 Server
+"region_id": 1  # New York 1
+"size_id": 66  # 512MB
+"private_networking": false
+"snapshot_name": ""
+"droplet_name": ""
+"ssh_port": 22
+"ssh_timeout": "1m"
+"ssh_username": "root"
+"state_timeout": "6m"
+

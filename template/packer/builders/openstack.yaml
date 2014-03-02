@@ -1,0 +1,17 @@
+"type": "openstack"
+
+# require
+"flavor": ""
+"image_name": ""
+"password": "SDK_PASSWORD"
+"provider": "SDK_PROVIDER"
+"region": ""
+"source_image": ""
+"username": "SDK_USERNAME"
+
+# optional
+"project": ""
+"ssh_port": 22
+"ssh_timeout": "1m"
+"ssh_username": "root"
+

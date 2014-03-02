@@ -1,0 +1,10 @@
+"type": "docker"
+
+# require
+"export_path": ""
+"image": ""
+
+# optional
+"pull": true
+"run_command": '["run", "-d", "-i", "-t", "-v", "{{.Volumes}}", "{{.Image}}", "/bin/bash"]'
+

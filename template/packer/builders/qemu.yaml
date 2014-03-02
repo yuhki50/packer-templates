@@ -1,0 +1,37 @@
+"type": "qemu"
+
+# require
+"iso_checksum": ""
+"iso_checksum_type": ""  # md5, sha1, sha256 or sha512
+"iso_url": ""
+"ssh_username": ""
+
+# optional
+"accelerator": ""  # kvm or xen
+"boot_command": [""]
+"boot_wait": "10s"
+"disk_size": 40000  # 40GB
+"disk_interface": "virtio"  # ide, scsi or virtio
+"format": "qcow2"  # qcow2 or raw
+"floppy_files": [""]
+"headless": false
+"http_directory": ""
+"http_port_min": 8000
+"http_port_max": 9000
+"iso_urls": [""]
+"net_device": "virtio"  # ne2k_pci, i82551, i82557b, i82559er, rtl8139, e1000, pcnet or virtio
+"qemuargs": [
+  [""]
+]
+"output_directory": "output-BUILDNAME"
+"qemu_binary": "qemu-system-x86_64"
+"shutdown_command": ""
+"shutdown_timeout": "5m"
+"ssh_host_port_min": 2222
+"ssh_host_port_min": 4444
+"ssh_key_path": ""
+"ssh_password": ""
+"ssh_port": 22
+"ssh_wait_timeout": "20m"
+"vm_name": "packer-{{.PackerBuildName}}"
+

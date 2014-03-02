@@ -1,0 +1,25 @@
+"type": "amazon-chroot"
+
+# require
+"access_key": "AWS_ACCESS_KEY"
+"ami_name": ""
+"secret_key": "AWS_SECRET_KEY"
+"source_ami": ""
+
+# optional
+"ami_description": ""
+"ami_groups": [""]
+"ami_product_codes": [""]
+"ami_regions": [""]
+"ami_users": [""]
+"chroot_mounts": [
+  [""]
+]
+"copy_files": [""]
+"device_path": ""
+"command_wrapper": "{{.Command}}"
+"mount_path": "packer-amazon-chroot-volumes/{{.Device}}."
+"tags": {
+  "key": "value"
+}
+

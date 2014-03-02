@@ -1,0 +1,46 @@
+"type": "vmware-iso"
+
+# require
+"iso_checksum": ""
+"iso_checksum_type": ""  # md5, sha1, sha256 or sha512
+"iso_url": ""
+"ssh_username": ""
+
+# optional
+"boot_command": [""]
+"boot_wait": "10s"
+"disk_size": 40000  # 40GB
+"disk_type_id": "1"  # split in 2GB files
+"floppy_files": [""]
+"fusion_app_path": "/Applications/VMware Fusion.app"
+"guest_os_type": "other"
+"headless": false
+"http_directory": ""
+"http_port_min": 8000
+"http_port_max": 9000
+"iso_urls": [""]
+"output_directory": "output-BUILDNAME"
+"remote_type": ""
+"remote_datastore": "datastore1"
+"remote_host": ""
+"remote_password": ""
+"remote_username": ""
+"skip_compaction": true
+"shutdown_command": ""
+"shutdown_timeout": "5m"
+"ssh_key_path": ""
+"ssh_password": ""
+"ssh_port": 22
+"ssh_skip_request_pty": false
+"ssh_wait_timeout": "20m"
+"tools_upload_flavor": ""  # darwin, linux, and windows
+"tools_upload_path": "{{.Flavor}}.iso"
+"vm_name": "packer-BUILDNAME"
+"vmdk_name": "packer"
+"vmx_data": {
+  "key": "value"
+}
+"vnc_port_min": 5900
+"vnc_port_max": 6000
+"vmx_template_path": ""
+
