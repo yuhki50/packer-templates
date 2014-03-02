@@ -1,0 +1,20 @@
+"type": "shell"
+
+# require
+#"inline": [""]
+#"script": ""
+"scripts": [
+  "scripts/base.sh",
+  "scripts/vagrant.sh",
+  "scripts/virtualbox.sh",
+  "scripts/cleanup.sh"
+]
+
+# optional
+#"binary": false
+#"environment_vars": [""]
+"execute_command": "echo 'vagrant' | {{ .Vars }} sudo -E -S sh '{{ .Path }}'"  # password
+#"inline_shebang": "/bin/sh"
+#"remote_path": "/tmp/script.sh"
+#"start_retry_timeout": "5m"
+
