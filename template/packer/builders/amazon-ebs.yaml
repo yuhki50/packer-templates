@@ -1,0 +1,59 @@
+"type": "amazon-ebs"
+
+# require
+"access_key": "AWS_ACCESS_KEY"
+"ami_name": ""
+"instance_type": "t1.micro"
+"region": "us-east-1"
+"secret_key": "AWS_SECRET_KEY"
+"source_ami": ""
+"ssh_username": ""
+
+# optional
+"ami_block_device_mappings": [
+  {
+    "device_name": "",
+    "virtual_name": "",
+    "snapshot_id": "",
+    "volume_type": "",
+    "volume_size": 8000,  # 8GB
+    "delete_on_termination": false,
+    "no_device": false,
+    "iops": 300
+  }
+]
+"ami_description": ""
+"ami_groups": [""]
+"ami_product_codes": [""]
+"ami_regions": [""]
+"ami_users": [""]
+"iam_instance_profile": ""
+"launch_block_device_mappings": [
+  {
+    "device_name": "",
+    "virtual_name": "",
+    "snapshot_id": "",
+    "volume_type": "",
+    "volume_size": 8000,  # 8GB
+    "delete_on_termination": false,
+    "no_device": false,
+    "iops": 300
+  }
+]
+"run_tags": {
+  "key": "value"
+}
+"security_group_id": ""
+"security_group_ids": [""]
+"ssh_port": 22
+"ssh_timeout": "1m"
+"subnet_id": ""
+"associate_public_ip_address": true
+"tags": {
+  "key": "value"
+}
+"user_data": ""
+"user_data_file": ""
+"vpc_id": ""
+"availability_zone": ""
+

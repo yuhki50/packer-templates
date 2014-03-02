@@ -1,0 +1,17 @@
+"type": "chef-solo"
+
+# optional
+"config_template": ""
+"cookbook_paths": [""]
+"data_bags_path": ""
+"encrypted_data_bag_secret_path": ""
+"execute_command": ""
+"install_command": ""
+"json": {}
+"remote_cookbook_paths": [""]
+"prevent_sudo": false
+"roles_path": ""
+"run_list": [""]
+"skip_install": false
+"staging_directory": "/tmp/packer-chef-solo"
+

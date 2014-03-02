@@ -1,0 +1,15 @@
+"type": "shell"
+
+# require
+"inline": [""]
+"script": ""
+"scripts": [""]
+
+# optional
+"binary": false
+"environment_vars": [""]
+"execute_command": "chmod +x {{ .Path }}; {{ .Vars }} {{ .Path }}"
+"inline_shebang": "/bin/sh"
+"remote_path": "/tmp/script.sh"
+"start_retry_timeout": "5m"
+

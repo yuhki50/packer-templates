@@ -1,0 +1,25 @@
+"type": "vmware-vmx"
+
+# require
+"source_path": ""
+"ssh_username": ""
+
+# optional
+"boot_wait": "10s"
+"floppy_files": [""]
+"fusion_app_path": "/Applications/VMware Fusion.app"
+"headless": false
+"output_directory": "output-BUILDNAME"
+"skip_compaction": true
+"shutdown_command": ""
+"shutdown_timeout": "5m"
+"ssh_key_path": ""
+"ssh_password": ""
+"ssh_port": 22
+"ssh_skip_request_pty": false
+"ssh_wait_timeout": "20m"
+"vm_name": "packer-BUILDNAME"
+"vmx_data": {
+  "key": "value"
+}
+

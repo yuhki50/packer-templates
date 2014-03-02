@@ -1,0 +1,12 @@
+"type": "ansible-local"
+
+# require
+"playbook_file": ""
+
+# optional
+"command": "ansible-playbook"
+"extra_arguments": [""]
+"playbook_paths": [""]
+"role_paths": [""]
+"staging_directory": "/tmp/packer-provisioner-ansible-local"
+

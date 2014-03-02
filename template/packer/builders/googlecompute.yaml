@@ -1,0 +1,21 @@
+"type": "googlecompute"
+
+# require
+"bucket_name": ""
+"client_secrets_file": ""
+"private_key_file": ""
+"project_id": ""
+"source_image": "debian-7"
+"zone": "us-central1-a"
+
+# optional
+"image_name": "packer-{{timestamp}}"
+"image_description": ""
+"machine_type": "n1-standard-1"
+"network": "default"
+"passphrase": ""
+"ssh_port": 22
+"ssh_timeout": "1m"
+"ssh_username": "root"
+"state_timeout": "5m"
+
