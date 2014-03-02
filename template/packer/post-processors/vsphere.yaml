@@ -1,0 +1,17 @@
+"type": "vsphere"
+
+# require
+"cluster": ""
+"datacenter": ""
+"datastore": ""
+"host": ""
+"password": ""
+"resource_pool": ""
+"username": ""
+"vm_folder": ""
+"vm_name": ""
+"vm_network": ""
+
+# optional
+"insecure": false
+
