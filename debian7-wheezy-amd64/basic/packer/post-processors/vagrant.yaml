@@ -3,6 +3,6 @@
 # optional
 #"compression_level": 1
 #"include": [""]
-"output": "debian7-wheezy-amd64_{{.Provider}}.box"
+"output": "debian7-wheezy-amd64-basic_{{.Provider}}.box"
 #"vagrantfile_template": ""
 
