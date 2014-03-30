@@ -1,0 +1,54 @@
+"type": "virtualbox-iso"
+
+# require
+"iso_checksum": "b712a141bc60269db217d3b3e456179bd6b181645f90e4aac9c42ed63de492e9"
+"iso_checksum_type": "sha256"  # md5, sha1, sha256 or sha512
+"iso_url": "http://ftp.jaist.ac.jp/debian-cd/current/amd64/iso-cd/debian-7.4.0-amd64-netinst.iso"
+"ssh_username": "vagrant"
+
+# optional
+"boot_command": [
+  "<esc><wait>",
+  "install ",
+
+  #"debian-installer/locale=ja_JP "
+  #"keyboard-configuration/xkb-keymap=us "
+
+  "auto-install/enable=true ",
+  "preseed/interactive=false ",
+  "preseed/url=http://{{ .HTTPIP }}:{{ .HTTPPort }}/preseed.cfg ",
+  "netcfg/get_hostname=VM-Debian7 ",
+  "netcfg/get_domain=vm-net.local ",
+  "<enter>"
+]
+"boot_wait": "10s"
+"disk_size": 40000  # 40GB
+#"floppy_files": [""]
+#"format": "ovf"  # ovf or ova
+#"guest_additions_mode": "upload"  # upload, attach, disable
+#"guest_additions_path": ""
+#"guest_additions_sha256": ""
+#"guest_additions_url": ""
+"guest_os_type": "Debian_64"
+"hard_drive_interface": "sata"  # ide or sata
+#"headless": false
+"http_directory": "http"
+#"http_port_min": 8000
+#"http_port_max": 9000
+#"iso_urls": [""]
+#"output_directory": "output-BUILDNAME"
+"shutdown_command": "echo 'vagrant' | sudo -S shutdown -h now"
+#"shutdown_timeout": "5m"
+#"ssh_host_port_min": 2222
+#"ssh_host_port_min": 4444
+#"ssh_key_path": ""
+"ssh_password": "vagrant"
+#"ssh_port": 22
+"ssh_wait_timeout": "1h"
+"vboxmanage": [
+  ["modifyvm", "{{.Name}}", "--memory", "1024"],
+  ["modifyvm", "{{.Name}}", "--cpus", "1"]
+]
+"virtualbox_version_file": ".vbox_version"
+"vm_name": "debian7-wheezy-amd64-gui"
+
